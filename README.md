@@ -1,6 +1,5 @@
 # STOCKS
 
-# STOCKS
 
 A simple Stocks Management System built using Python Django, demonstrating clean implementation of CRUD operations (Create, Read, Update, Delete) for managing stock items.
 
