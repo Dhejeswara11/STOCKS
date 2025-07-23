@@ -1,0 +1,112 @@
+{% extends 'Home.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    {% block content %}
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Dashboard</h2>
+
+
+
+
+    <!-- Section 1: Image Left, Text Right -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <img src="{% static 'images/img1.jpg' %}" class="img-fluid rounded dashboard-image" alt="Warehouse Image">
+        </div>
+        <div class="col-md-6">
+            <p class="text-justify px-3 dashboard-text">
+                This image illustrates a warehouse or inventory storage setting, showcasing the core activities involved in a stock management system. A worker is actively engaged in managing inventory, indicating how important human oversight is even in semi-automated systems.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 2: Text Left, Image Right -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+            <img src="{% static 'images/img2.jpg' %}" class="img-fluid rounded dashboard-image" alt="Image 2">
+        </div>
+        <div class="col-md-6">
+            <p class="text-justify px-3 dashboard-text">
+                This warehouse image represents the large-scale storage of electronic products such as televisions, laptops, and home appliances. Electronics stock management requires careful categorization, anti-static handling, and climate control to avoid product damage. Efficient storage layout ensures quick location of items and minimal delays in order fulfillment.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 3: Image Left, Text Right -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <img src="{% static 'images/img3.jpg' %}" class="img-fluid rounded dashboard-image" alt="Image 3">
+        </div>
+        <div class="col-md-6">
+            <p class="text-justify px-3 dashboard-text">
+                This digital dashboard is crucial for managing electronics inventory. It displays real-time data on stock levels, sales trends, and product movements. For electronics, such monitoring helps avoid overstocking fast-depreciating tech items and ensures popular models are always available, optimizing both cost and customer satisfaction.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 4: Text Left, Image Right -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+            <img src="{% static 'images/img4.jpg' %}" class="img-fluid rounded dashboard-image" alt="Image 4">
+        </div>
+        <div class="col-md-6">
+            <p class="text-justify px-3 dashboard-text">
+                This image reflects a clean, well-lit environment suited for storing valuable electronics. Boxes are neatly stacked to prevent damage, and aisle spacing allows for safe movement of delicate tech equipment. Proper labeling and barcoding ensure that each product is traceable, supporting warranty management and after-sales service.
+            </p>
+        </div>
+    </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer -->
+<footer style="background-color: #1a1d20; color: #fff; padding: 40px 20px 10px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: left;">
+        
+        <!-- About -->
+        <div style="flex: 1 1 300px; margin-bottom: 20px;">
+            <h5>About</h5>
+            <p>This Stock Management System helps businesses manage inventory efficiently with real-time updates and reporting.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div style="flex: 1 1 200px; margin-bottom: 20px;">
+            <h5>Quick Links</h5>
+            <ul style="list-style: none; padding-left: 0;">
+                <li><a href="{% url 'dashboard' %}" class="text-white text-decoration-none">Dashboard</a></li>
+                    <li><a href="{% url 'stock view' %}" class="text-white text-decoration-none">Stock List</a></li>
+                    <li><a href="{% url 'about' %}" class="text-white text-decoration-none">About</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div style="flex: 1 1 250px; margin-bottom: 20px;">
+            <h5>Contact</h5>
+            <p>Email: support@dhejeswara2004@gmail.com</p>
+            <p>Phone: 9342667505</p>
+            <p>Location: Chennai, India</p>
+        </div>
+
+    </div>
+
+    <hr style="border-top: 1px solid #444; margin-top: 20px;">
+    <div style="text-align: center; padding-bottom: 10px;">
+        <small>&copy; 2025 Stock Management System. All rights reserved.</small>
+    </div>
+</footer>
+
+</body>
+</html>
+{% endblock %}
+
+

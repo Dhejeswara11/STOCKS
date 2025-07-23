@@ -1,0 +1,118 @@
+.container {
+    
+    max-width: 1000px;
+}
+
+body {
+    background: linear-gradient(135deg, #ffffff 0%, #e8f0ff 100%);
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 15px;
+}
+/* Footer Styling */
+footer {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #e0e0e0;
+    padding-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffdd57;
+}
+
+footer p,
+footer li,
+footer a {
+    font-size: 15px;
+    color: #e0e0e0;
+    margin: 0 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 30px 0 15px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 20px;
+    text-align: left;
+}
+
+footer .footer-column {
+    flex: 1 1 250px;
+    min-width: 220px;
+}
+
+footer .text-center {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-column {
+        text-align: center;
+    }
+}
+
+
+.dashboard-image {
+    max-height: 200px; /* Adjust this value as needed */
+    object-fit: contain;
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.dashboard-text {
+    font-size: 1rem;
+    text-align: justify;
+    color: #333;
+}
+
